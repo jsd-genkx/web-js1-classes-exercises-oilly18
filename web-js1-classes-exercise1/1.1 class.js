@@ -28,14 +28,45 @@
 
 // class
 
-class Product {
+// class Product {
+//   constructor(name, price) {
+//     this.name = name;
+//     this.price = price;
+//   }
+//   // don't need to use the function keyword in class
+//   displayProduct() {
+//     console.log(`Product: ${this.name}`);
+//     console.log(`Price: ฿${this.price.toFixed(2)}`);
+//   }
+
+//   calculateTotal(salesTax) {
+//     return this.price + this.price * salesTax;
+//   }
+// }
+
+// const salesTax = 0.07;
+
+// const product1 = new Product("Shirt", 249.99);
+// const product2 = new Product("Pants", 339.99);
+// const product3 = new Product("Underwear", 149.99);
+
+// product1.displayProduct();
+
+// const totalPrice = product1.calculateTotal(salesTax);
+
+// console.log(`Total Price (with tax): ฿${totalPrice.toFixed(2)}`);
+
+
+
+
+class Car {
   constructor(name, price) {
     this.name = name;
     this.price = price;
   }
   // don't need to use the function keyword in class
-  displayProduct() {
-    console.log(`Product: ${this.name}`);
+  displayCar() {
+    console.log(`Car: ${this.name}`);
     console.log(`Price: ฿${this.price.toFixed(2)}`);
   }
 
@@ -46,12 +77,12 @@ class Product {
 
 const salesTax = 0.07;
 
-const product1 = new Product("Shirt", 249.99);
-const product2 = new Product("Pants", 339.99);
-const product3 = new Product("Underwear", 149.99);
+const car1 = new Car("Toyota", 20000.99);
+const car2 = new Car("Honda", 30000.99);
+const car3 = new Car("Ford", 10000.99);
 
-product1.displayProduct();
+car1.displayCar();
 
-const totalPrice = product1.calculateTotal(salesTax);
+const totalPrice = car1.calculateTotal(salesTax);
 
 console.log(`Total Price (with tax): ฿${totalPrice.toFixed(2)}`);
